@@ -249,7 +249,23 @@
         }
     }
 }
+@media (max-width: 767px) {
+    .footer-container {
+        .footer__contact {
+            .flexDisplay;
+            .justifyContent (center);
+            .alignItems (center);
+            .flexDirection (column);
+            .footer__info {
+                order: 2;
+            }
 
+            .footer__social {
+                order: 1;
+            }
+        }
+    }
+}
 @media (min-width: 576px) and (max-width: 767px) {
     .footer-container {
         padding-bottom: 30px;
@@ -313,10 +329,7 @@
         }
         .footer__contact {
             padding-top: 15px;
-            .flexDisplay;
-            .justifyContent (center);
-            .alignItems (center);
-            .flexDirection (column);
+            
             .footer__info {
                 text-align: center;
                 margin-top: 0;
